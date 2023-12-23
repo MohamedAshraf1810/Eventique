@@ -1,0 +1,208 @@
+$primary-blue-color: #119592;
+$secondary-gray-color: #1f3135;
+$beig-color: #e7af82;
+
+@mixin Circle {
+  position: absolute;
+  height: 100%;
+  opacity: 0.2;
+  background: linear-gradient(
+    180deg,
+    $beig-color 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+//// Section 1 Start ////
+
+// Brand-Book_Call_Section
+.Brand-Book_Call_Section {
+  width: 100%;
+  background-color: #f6f7f8;
+
+  .Brand-Book_Call_Section-Container {
+    position: relative;
+    margin: auto;
+    // Circle 1 in Background
+    .circle1 {
+      @include Circle();
+      width: 50%;
+      clip-path: circle(30% at 30% 50%);
+    }
+
+    // Circle 2 in Background
+    .circle2 {
+      @include Circle();
+      width: 100%;
+      clip-path: circle(15% at 90% 90%);
+    }
+
+    // Content Container
+    .Brand-Book_Call-Content {
+      position: relative;
+      z-index: 1;
+
+      // Header
+      .Header {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 15px;
+        .eventiqueExtension {
+          // .CO
+          font-size: 15px;
+          font-weight: bold;
+          color: #685a6a;
+        }
+        .BookCallBTN {
+          width: 180px;
+          height: 60px;
+          border: none;
+          border-radius: 98px;
+          box-shadow: 0px 25.1px 31.375px 0px rgba(182, 182, 173, 0.26);
+
+          color: #fff;
+          text-align: center;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
+          background: linear-gradient(
+            180deg,
+            $primary-blue-color 0%,
+            #4f7878 50.62%,
+            rgba(31, 49, 53, 0.83) 100%
+          );
+          filter: drop-shadow(0px 25.1px 31.375px rgba(182, 182, 173, 0.26));
+        }
+      }
+
+      // Employees_Focus
+      .Employees_Focus {
+        width: 100%;
+        display: flex;
+        .EmployeesFocusBTN {
+          margin: auto;
+          margin-top: 20px;
+          border-radius: 100px;
+          border: 1px solid #47332d;
+          background: rgba(71, 51, 45, 0.05);
+          padding: 10px 20px;
+          color: $primary-blue-color;
+          text-align: center;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px;
+        }
+      }
+
+      // company_Description
+      .company_Description {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        .company_Description-Container {
+          .C_D_Container-Text {
+            color: #291c0b;
+
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100px;
+            p:nth-child(1) {
+              font-size: 70px;
+            }
+            p:nth-child(2) {
+              font-size: 90px;
+              font-style: italic;
+              font-weight: bold;
+              color: $beig-color;
+            }
+            p:nth-child(3) {
+              font-size: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//// Section 1 End ////
+
+//// Section 2 Start ////
+
+.company-Reservations {
+  // width: 100%;
+  // height: 700px;
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.74) 18.2%,
+      rgba(153, 153, 153, 0.56) 118.19%
+    ),
+    url(../../Static/Images/two_Seperated_Buildings.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .company-Reservations_Container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    .dottedLineSVG {
+      position: absolute;
+      width: 120%;
+      height: 80%;
+      top: 15%;
+      // right: 4.5%;
+    }
+
+    .airbusSVG {
+      position: absolute;
+      right: 16.5%;
+      bottom: 70%;
+    }
+
+    .company-Reservations_Content {
+      position: relative;
+      .company-Reservations-content-title {
+        width: 100%;
+        background-color: #1f3135;
+        opacity: 0.4;
+        justify-content: center;
+        height: 200px;
+        align-items: center;
+        justify-content: end;
+        display: flex;
+        flex-direction: column;
+        color: $beig-color;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .company-Reservations-content-Icons {
+        background-color: #291c0b;
+        width: 100%;
+        height: 570px;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .C-R-Icons-Container {
+          // C-R >> stands For company Reservations
+          background-color: #119592;
+          width: 40%;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
