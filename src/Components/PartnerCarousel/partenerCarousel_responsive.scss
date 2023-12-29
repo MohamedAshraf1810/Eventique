@@ -1,0 +1,17 @@
+// Responsive of the partener carousel
+@import "../../Helpers/mediaQueries";
+
+// from minimum to 575px
+@include Xs {
+  .PartnerCarousel {
+    padding: 5px;
+    .partnersContainer {
+      .partnersLogo {
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}

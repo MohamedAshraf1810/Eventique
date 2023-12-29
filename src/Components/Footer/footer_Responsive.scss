@@ -1,0 +1,28 @@
+// Responsive for footer
+@import "../../Helpers/mediaQueries";
+
+// from minimum to 575px
+@include Xs {
+  .footer {
+    height: 150px;
+    .footerContainer {
+      width: 100%;
+      flex-direction: column;
+      .footer-Brand-Logo {
+        text-align: center;
+        margin-bottom: 10px;
+        .BrandLogo {
+          font-size: 20px;
+        }
+        .BrandExtension {
+          font-size: 15px;
+        }
+      }
+      .Brand-copyrights {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+  }
+}

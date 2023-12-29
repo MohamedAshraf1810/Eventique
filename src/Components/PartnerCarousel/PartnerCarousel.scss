@@ -28,17 +28,5 @@
   }
 }
 
-@import "../../Helpers/mediaQueries";
-@include Xs {
-  .PartnerCarousel{
-    padding: 5px;
-    .partnersContainer{
-      .partnersLogo{
-        img{
-          width: 60px;
-          height: 60px;
-        }
-      }
-    }
-  }
-}
+// Media Query
+@import "./partenerCarousel_responsive.scss";

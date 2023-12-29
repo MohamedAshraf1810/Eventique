@@ -54,21 +54,5 @@
 }
 
 
-@import '../../Helpers/mediaQueries';
-
-@include Xs{
-  .Carousel {
-    .Carousel-container{
-      height: fit-content;
-      margin-bottom: 40px;
-      margin-top: 40px;
-      .Carousel-container-Data{
-        .Carousel-container-Data-Paragraph{
-          p{
-            font-size: 20px;
-          }
-        }
-      }
-    }
-  } 
-}
+// Media Query
+@import './featureCarousel_Responsive.scss';
