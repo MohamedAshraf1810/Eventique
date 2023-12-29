@@ -1,0 +1,74 @@
+@import "../../App.scss";
+
+.Carousel {
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(24, 46, 45, 0.9),
+    rgba(17, 149, 146, 0.9)
+  );
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../Static/Images/two_Seperated_Buildings.png) no-repeat center/cover;
+  // Carsousel Shadow
+  box-shadow: 10px 10px 80px rgba($color: $Dark-Green-color, $alpha: 0.9);
+  width: 100%;
+  .Carousel-container {
+    // width: 60%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    .Carousel-container-Data {
+      width: 100%;
+      display: flex;
+      // .Carousel-container-Data-img {
+      //   padding-top: 20px;
+      //   padding-bottom: 20px;
+      //   // background-color: brown;
+      //   color: white;
+      //   width: 30%;
+      //   text-align: center;
+      // }
+
+      .Carousel-container-Data-Paragraph {
+        font-size: 25px;
+        // background-color: chocolate;
+        color: white;
+        // width: 70%;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 60%;
+          margin: auto;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@import '../../Helpers/mediaQueries';
+
+@include Xs{
+  .Carousel {
+    .Carousel-container{
+      height: fit-content;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      .Carousel-container-Data{
+        .Carousel-container-Data-Paragraph{
+          p{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  } 
+}

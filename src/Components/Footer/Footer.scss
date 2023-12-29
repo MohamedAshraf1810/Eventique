@@ -1,0 +1,76 @@
+@import "../../App.scss";
+
+.footer {
+  background-color: $Dark-Green-color;
+  width: 100%;
+  color: white;
+  .footerContainer {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-Brand-Logo {
+      width: 50%;
+      // background-color: red;
+
+      .BrandLogo {
+        color: white;
+        font-family: Lato;
+        font-size: 33.66px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30.855px;
+        text-transform: uppercase;
+      }
+      .BrandExtension {
+        color: white;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30.855px;
+      }
+    }
+    .Brand-copyrights {
+      width: 50%;
+      // background-color: rgb(210, 210, 210);
+      text-align: right;
+      // color: #47332d;
+      // text-align: right;
+      // font-feature-settings: "liga" off;
+      // font-size: 18px;
+      // font-style: normal;
+      // font-weight: 400;
+      // line-height: 30px; /* 166.667% */
+      // letter-spacing: 0.072px;
+    }
+  }
+}
+
+@import '../../Helpers/mediaQueries';
+
+@include Xs {
+  .footer{
+    height: 150px;
+    .footerContainer{
+      width: 100%;
+      flex-direction: column;
+      .footer-Brand-Logo {
+        text-align: center;
+        margin-bottom: 10px;
+        .BrandLogo {
+          font-size: 20px;
+        }
+        .BrandExtension {
+          font-size: 15px;
+        }
+      }
+      .Brand-copyrights{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+  }
+}

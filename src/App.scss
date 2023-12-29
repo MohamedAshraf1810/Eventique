@@ -1,8 +1,36 @@
+// Main Colors
+$primary-green-color: #119592;
+$Dark-Green-color: #1f3135;
+$beig-color: #e7af82;
+
+// Font families
+@font-face {
+  font-family: Dm_Sans;
+  src: url(Static/Fonts/DMSans/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Paytone_One;
+  src: url(Static/Fonts/Paytone_One/PaytoneOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(Static/Fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(Static/Fonts/Montserrat/Montserrat.ttf);
+}
+
+// App Scss Properties
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
+  background-color: #f6f7f8;
   background-color: #afd7ff;
-  font-family: Arial, Helvetica, sans-serif;
 }

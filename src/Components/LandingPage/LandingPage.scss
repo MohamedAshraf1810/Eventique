@@ -1,7 +1,6 @@
-$primary-blue-color: #119592;
-$secondary-gray-color: #1f3135;
-$beig-color: #e7af82;
+@import "../../App.scss";
 
+// Circle properties in Section 1
 @mixin Circle {
   position: absolute;
   height: 100%;
@@ -13,12 +12,34 @@ $beig-color: #e7af82;
   );
 }
 
+// Book Call Button
+@mixin BookCall {
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 98px;
+  box-shadow: 0px 25.1px 31.375px 0px rgba(182, 182, 173, 0.26);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  background: linear-gradient(
+    180deg,
+    $primary-green-color 0%,
+    #4f7878 50.62%,
+    rgba(31, 49, 53, 0.83) 100%
+  );
+  filter: drop-shadow(0px 25.1px 31.375px rgba(182, 182, 173, 0.26));
+}
+
 //// Section 1 Start ////
 
-// Brand-Book_Call_Section
+// Brand-Book_Call_Section (Header)
 .Brand-Book_Call_Section {
   width: 100%;
   background-color: #f6f7f8;
+  padding-bottom: 20px;
 
   .Brand-Book_Call_Section-Container {
     position: relative;
@@ -57,31 +78,15 @@ $beig-color: #e7af82;
           color: #685a6a;
         }
         .BookCallBTN {
-          width: 180px;
-          height: 60px;
-          border: none;
-          border-radius: 98px;
-          box-shadow: 0px 25.1px 31.375px 0px rgba(182, 182, 173, 0.26);
-
-          color: #fff;
-          text-align: center;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 26px;
-          background: linear-gradient(
-            180deg,
-            $primary-blue-color 0%,
-            #4f7878 50.62%,
-            rgba(31, 49, 53, 0.83) 100%
-          );
-          filter: drop-shadow(0px 25.1px 31.375px rgba(182, 182, 173, 0.26));
+          @include BookCall();
+          cursor: pointer;
         }
       }
 
       // Employees_Focus
       .Employees_Focus {
         width: 100%;
+        margin: auto;
         display: flex;
         .EmployeesFocusBTN {
           margin: auto;
@@ -90,12 +95,13 @@ $beig-color: #e7af82;
           border: 1px solid #47332d;
           background: rgba(71, 51, 45, 0.05);
           padding: 10px 20px;
-          color: $primary-blue-color;
+          color: $primary-green-color;
           text-align: center;
           font-size: 14px;
           font-style: normal;
           font-weight: 700;
           line-height: 22px;
+          cursor: pointer;
         }
       }
 
@@ -108,7 +114,6 @@ $beig-color: #e7af82;
         .company_Description-Container {
           .C_D_Container-Text {
             color: #291c0b;
-
             font-size: 70px;
             font-style: normal;
             font-weight: 400;
@@ -124,6 +129,7 @@ $beig-color: #e7af82;
             }
             p:nth-child(3) {
               font-size: 70px;
+              margin-bottom: 0;
             }
           }
         }
@@ -133,13 +139,10 @@ $beig-color: #e7af82;
 }
 //// Section 1 End ////
 
-//// Section 2 Start ////
+//// Section 2 Start (Reservations) ////
 
 .company-Reservations {
-  // width: 100%;
-  // height: 700px;
   width: 100%;
-  height: 800px;
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.74) 18.2%,
@@ -156,30 +159,30 @@ $beig-color: #e7af82;
     height: 100%;
     overflow: hidden;
     .dottedLineSVG {
+      width: 1435px;
+      height: 527px;
       position: absolute;
-      width: 120%;
-      height: 80%;
       top: 15%;
-      // right: 4.5%;
     }
 
     .airbusSVG {
       position: absolute;
       right: 16.5%;
       bottom: 70%;
+      width: 276px;
+      height: 276px;
     }
 
     .company-Reservations_Content {
       position: relative;
       .company-Reservations-content-title {
         width: 100%;
-        background-color: #1f3135;
-        opacity: 0.4;
         justify-content: center;
-        height: 200px;
+        height: 280px;
+        display: flex;
+        gap: 20px;
         align-items: center;
         justify-content: end;
-        display: flex;
         flex-direction: column;
         color: $beig-color;
         font-size: 20px;
@@ -187,20 +190,573 @@ $beig-color: #e7af82;
         font-weight: 700;
         line-height: normal;
         text-transform: capitalize;
+        .eventDesc {
+          margin-bottom: 30px;
+        }
+        .BookCallBTN {
+          @include BookCall();
+          width: 471px;
+          cursor: pointer;
+        }
       }
       .company-Reservations-content-Icons {
-        background-color: #291c0b;
         width: 100%;
-        height: 570px;
-        opacity: 0.7;
+        height: 450px;
         display: flex;
         justify-content: center;
         align-items: center;
         .C-R-Icons-Container {
           // C-R >> stands For company Reservations
-          background-color: #119592;
           width: 40%;
+          height: 180px;
+          display: flex;
+          justify-content: space-around;
+          align-items: end;
+          .icon-title-feature {
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            margin-bottom: 5px;
+            .feature-icon-Div {
+              border-radius: 20px;
+              background: $Dark-Green-color;
+              padding: 15px;
+              width: 105px;
+              height: 105px;
+              margin: auto;
+              margin-bottom: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            &.flighReserv {
+              margin-bottom: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//// Section 2 End ////
+
+//// Section 3 Start (Key Features) ////
+
+.key-features-section {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 30px;
+  .key-feature-header {
+    width: 100%;
+    padding: 25px;
+    .key-feature-header-content {
+      margin: auto;
+      text-align: center;
+      width: 40%;
+      .business_key_Feature {
+        color: #119592;
+        font-size: 48px;
+        margin-bottom: 30px;
+        font-family: Paytone_One, Arial, Helvetica, sans-serif;
+      }
+      .business_key_Feature_subtitle {
+        color: #291c0b;
+        font-size: 15px;
+      }
+    }
+  }
+  .key-feature-Carousel {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/// Section 3 End ////
+
+/// Section 4 Start (Brand Name) ////
+
+.BrandNameBaner-section {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+  background-color: white;
+  overflow: hidden;
+  .BrandName-section-Container {
+    padding-top: 20px;
+    background-color: white;
+    margin: auto;
+    .BanerBrandName {
+      font-family: Lato;
+      margin: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 149, 146, 0.2) 17.92%,
+        rgba(31, 49, 53, 0.17) 82.08%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-family: Lato;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//// Section 4 End ////
+
+//// Section 5 Start (Numbers) ////
+.Brand-Numbers-Section {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  .Brand-Numbers-Container {
+    width: 90%;
+    margin: auto;
+    .Brand-Number-Title {
+      text-align: center;
+      text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+      font-family: Dm_Sans;
+      background: linear-gradient(180deg, #149f98 0%, #2e5d84 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 55px;
+      font-style: italic;
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+    .Brand-Customers-impressions {
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+      // background-color: red;
+      .impressions {
+        width: 33%;
+        margin-top: 20px;
+        .numberOfClients {
+          width: 33%;
+          height: 132px;
+          margin: auto;
+          border-radius: 20px;
+          border: 5px solid black;
+          display: flex;
+          justify-content: center;
+          font-weight: bold;
+          align-items: center;
+          font-size: 32px;
+        }
+        .impressionTitle {
+          color: #149f98;
+          text-align: center;
+          font-family: Dm_Sans;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-top: 20px;
+        }
+      }
+    }
+    .Numbers-BookCall {
+      width: 100%;
+      // background-color: #291c0b;
+      text-align: center;
+      padding: 20px;
+      .BookCallBTN {
+        @include BookCall();
+        width: 493.457px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+//// Section 5 End ////
+
+//// Section 6 Start (Partners) ////
+.Brand-Partners {
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+  font-family: Dm_Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  overflow: hidden;
+  .Brand-Partners-title {
+    background-color: white;
+    position: relative;
+    top: 15px;
+    width: fit-content;
+    margin: auto;
+    z-index: 1;
+    font-size: 48px;
+    .SO {
+      color: #241e09;
+      text-align: center;
+      text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+      font-weight: bold;
+    }
+    .OP {
+      color: #149f98;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
+//// Section 6 End ////
+
+//// Section 7 Start ////
+.support-section {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 20px;
+  overflow: hidden;
+  .support-Header {
+    width: 40%;
+    margin: auto;
+    height: 200px;
+    color: #241e09;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .support-types {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    .support-types-Container {
+      width: 30%;
+      height: 280px;
+      background-color: white;
+      background-color: rgba(240, 240, 240, 0.232);
+      border: 1px solid black;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .supportIcon-container {
+        width: 100%;
+        margin-bottom: 30px;
+        .supportIconBG {
+          width: 60px;
+          height: 60px;
+          margin: auto;
+          flex-shrink: 0;
+          border-radius: 60px;
+          background: linear-gradient(
+            180deg,
+            #119598 0.08%,
+            rgba(31, 49, 53, 0.83) 99.93%
+          );
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .support-title {
+        text-align: center;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      .support-content {
+        width: 90%;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+//// Section 7 End ////
+
+//// Section 8 Start (Collaboration) ////
+
+.collaboration-section {
+  background-color: white;
+  width: 100%;
+  padding-top: 1px;
+  overflow: hidden;
+  .collaboration-Container {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    .collaboration-Header {
+      text-align: center;
+      width: 70%;
+      margin: auto;
+      .collaboration-Header-h2 {
+        font-family: Dm_Sans;
+        font-weight: 700;
+        font-size: 55px;
+        span:nth-child(1) {
+          color: #241e09;
+          text-align: center;
+          text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+          font-style: normal;
+        }
+        span:nth-child(2) {
+          background: linear-gradient(0deg, #241e09 0%, #241e09 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-style: italic;
+          line-height: normal;
+        }
+      }
+    }
+
+    .collaboration-Data {
+      margin-top: 30px;
+      .collaboration-Data-Container {
+        height: 700px;
+        width: 100%;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+//// Section 8 End ////
+
+// Media Query
+@import "../../Helpers/mediaQueries";
+
+// 575px
+@include Xs {
+  // Brand-Book_Call_Section (Header)
+  .Brand-Book_Call_Section {
+    overflow: hidden;
+    .Brand-Book_Call_Section-Container {
+      .Brand-Book_Call-Content {
+        // Header
+        .Header {
+          h1 {
+            font-size: 25px;
+          }
+          .BookCallBTN {
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+          }
+        }
+        // Employees_Focus
+        .Employees_Focus {
+          .EmployeesFocusBTN {
+            font-size: 10px;
+            padding: 7px;
+          }
+        }
+        // company_Description
+        .company_Description {
+          .company_Description-Container {
+            .C_D_Container-Text {
+              line-height: normal;
+              p:nth-child(1) {
+                font-size: 50px;
+              }
+              p:nth-child(2) {
+                font-size: 50px;
+              }
+              p:nth-child(3) {
+                font-size: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //// Section 1 End ////
+
+  //// Section 2 Start (Reservations) ////
+  .company-Reservations {
+    padding-bottom: 20px;
+    .company-Reservations_Container {
+      .dottedLineSVG {
+        width: 100%;
+        top: 15%;
+      }
+      .airbusSVG {
+        width: 150px;
+        bottom: 30%;
+        right: 10%;
+      }
+
+      .company-Reservations_Content {
+        .company-Reservations-content-title {
+          justify-content: center;
           height: 150px;
+          .eventDesc {
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            margin-top: 40px;
+          }
+          .BookCallBTN {
+            width: 50%;
+            height: fit-content;
+            font-size: 10px;
+            padding: 10px;
+          }
+        }
+        .company-Reservations-content-Icons {
+          align-items: flex-start;
+          height: fit-content;
+          .C-R-Icons-Container {
+            width: fit-content;
+            gap: 20px;
+            .icon-title-feature {
+              width: 100%;
+              height: fit-content;
+              .feature-icon-Div {
+                width: 60px;
+                height: 60px;
+                border-radius: 10px;
+              }
+              h3 {
+                font-size: 10px;
+                width: fit-content;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //// Section 2 End ////
+
+  //// Section 3 Start (Key Features) ////
+  .key-features-section {
+    .key-feature-header {
+      .key-feature-header-content {
+        width: 75%;
+        .business_key_Feature {
+          font-size: 30px;
+        }
+        .business_key_Feature_subtitle {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  //// Section 3 End ////
+
+  /// Section 4 Start (Brand Name) ////
+  .BrandNameBaner-section {
+    .BrandName-section-Container {
+      .BanerBrandName {
+        font-size: 50px;
+      }
+    }
+  }
+
+  /// Section 4 End ////
+
+  //// Section 5 Start (Numbers) ////
+  .Brand-Numbers-Section {
+    .Brand-Numbers-Container {
+      .Brand-Number-Title {
+        font-size: 30px;
+      }
+      .Brand-Customers-impressions {
+        .impressions {
+          .numberOfClients {
+            width: 90px;
+            height: 90px;
+            span {
+              font-size: 20px;
+            }
+          }
+          .impressionTitle {
+            font-size: 15px;
+          }
+        }
+      }
+      .Numbers-BookCall {
+        .BookCallBTN {
+          width: 90%;
+          height: 50px;
+        }
+      }
+    }
+  }
+  //// Section 5 End ////
+
+  //// Section 6 Start (Partners) ////
+
+  .Brand-Partners {
+    .Brand-Partners-title {
+      font-size: 26px;
+    }
+  }
+
+  //// Section 6 End ////
+
+  //// Section 7 Start (Support-Employees) ////
+  .support-section {
+    .support-Header {
+      width: 70%;
+      font-size: 25px;
+      height: fit-content;
+      margin-bottom: 25px;
+    }
+    .support-types {
+      flex-direction: column;
+      gap: 25px;
+      .support-types-Container {
+        width: 80%;
+        height: fit-content;
+        padding-top: 10px;
+        .supportIcon-container {
+          margin: 0;
+        }
+        .support-title {
+          margin-top: 15px;
+          font-size: 15px;
+        }
+        .support-content {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  //// Section 7 End ////
+
+  //// Section 8 Start (Collaboration)////
+
+  .collaboration-section {
+    .collaboration-Container {
+      .collaboration-Header {
+        .collaboration-Header-h2 {
+          font-size: 20px;
         }
       }
     }
