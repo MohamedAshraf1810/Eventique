@@ -1,9 +1,9 @@
 import React, { lazy, Suspense } from 'react';
-import './LandingPage.scss';
 import FeatureCarousel from '../FeatureCarousel/FeatureCarousel';
 import Footer from '../Footer/Footer';
 import PartnerCarousel from '../PartnerCarousel/PartnerCarousel';
 import SupportDate from '../../Data/SupportData';
+import './LandingPage.scss';
 const CalendlyEmbed = lazy(() => import('../Calendly/Calendly'));
 
 const LandingPage = () => {
@@ -172,7 +172,6 @@ const LandingPage = () => {
             </section>
             {/* Section 6 End*/}
 
-
             {/* Section 7 Start (Support-Employees) */}
             <section className='support-section'>
                 <div className='support-Header'>
@@ -201,7 +200,6 @@ const LandingPage = () => {
             </section>
 
             {/* Section 7 End */}
-
 
             {/* Section 8 Start (Collaboration) */}
             <section className='collaboration-section'>

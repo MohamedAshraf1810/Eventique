@@ -415,7 +415,6 @@
   }
 }
 //// Section 6 End ////
-
 //// Section 7 Start ////
 .support-section {
   width: 100%;
@@ -425,7 +424,7 @@
   .support-Header {
     width: 40%;
     margin: auto;
-    height: 200px;
+    margin-bottom: 30px;
     color: #241e09;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -444,7 +443,7 @@
     margin: auto;
     .support-types-Container {
       width: 30%;
-      height: 280px;
+      padding: 10px;
       background-color: white;
       background-color: rgba(240, 240, 240, 0.232);
       border: 1px solid black;
@@ -479,6 +478,7 @@
         font-style: normal;
         font-weight: 500;
         margin-bottom: 20px;
+        font-weight: bold;
       }
       .support-content {
         width: 90%;
