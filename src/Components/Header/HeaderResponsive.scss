@@ -1,0 +1,13 @@
+// Responsive for Header
+@import "../../Helpers/mediaQueries";
+
+// from minimum to 575px
+@include Xs {
+  .brandHeader {
+    .headerContainer {
+      .BookCallBTNHeaderResp {
+        height: 45px;
+      }
+    }
+  }
+}

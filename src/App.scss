@@ -24,6 +24,27 @@ $beig-color: #e7af82;
   src: url(Static/Fonts/Montserrat/Montserrat.ttf);
 }
 
+// Book Call Button
+@mixin BookCall {
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 98px;
+  box-shadow: 0px 25.1px 31.375px 0px rgba(182, 182, 173, 0.26);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  background: linear-gradient(
+    180deg,
+    $primary-green-color 0%,
+    #4f7878 50.62%,
+    rgba(31, 49, 53, 0.83) 100%
+  );
+  filter: drop-shadow(0px 25.1px 31.375px rgba(182, 182, 173, 0.26));
+}
+
 // App Scss Properties
 * {
   margin: 0;
@@ -32,5 +53,4 @@ $beig-color: #e7af82;
 
 body {
   background-color: #f6f7f8;
-  background-color: #afd7ff;
 }

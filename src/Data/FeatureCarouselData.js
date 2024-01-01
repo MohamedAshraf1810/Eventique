@@ -1,27 +1,18 @@
 // Data of Feature Carousel
 
-import People_operation from '../Static/Images/Carousel-Icons/People_operation.png'
-import Invest from '../Static/Images/Carousel-Icons/Invest.png';
-import Cash_Flow from '../Static/Images/Carousel-Icons/Cash_Flow.png'
 
 const carouselData = [
     {
         id: '1',
-        DescImage: People_operation,
-        DescImageAlt: 'People_operation',
-        TextContent: 'More than 100000 hotel globally we promise a hustle free dealing with your travel requirements like never before.'
+        TextContent: 'Discover Unmatched Travel Excellence: With Our Global Network of Over 100,000 Hotels and Exclusive Partnerships, We Guarantee Superior Value and Hassle-Free Experiences, Offering Better Prices Than Any Online Booking Site.'
     },
     {
         id: '2',
-        DescImage: Invest,
-        DescImageAlt: 'Invest',
-        TextContent: 'Dedicated account manager who will be the support with any  amendments so you never have to explore on your own'
+        TextContent: "Navigate Your Travel with Confidence: Our Dedicated Account Managers Provide Expert Support for Any Amendments, Complex Bookings, and Tailored Itineraries. With Us, You're Never Alone in Your Journey. Experience Our Mastery in Time Efficiency and Personalized Service."
     },
     {
         id: '3',
-        DescImage: Cash_Flow,
-        DescImageAlt: 'Cash_Flow',
-        TextContent: 'Flexible communications , travel support and fully refundable bookings where we handle everything from A to Z'
+        TextContent: 'Travel with Total Peace of Mind: Our Service Offers Flexible Communication, Comprehensive Support, and Fully Refundable Bookings. We Handle Every Detail from A to Z, Ensuring a Seamless Experience. Plus, Enjoy Exclusive Perks Unavailable to the General Public – from Room Upgrades and Late Checkouts to Special Hotel Amenities. Experience Travel, Elevated.'
     },
 ];
 

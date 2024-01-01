@@ -6,7 +6,7 @@ import PartnerCarouselData from '../../Data/PartnerCarouselData';
 const PartnerCarousel = () => {
     return (
         <>
-            <Carousel className='PartnerCarousel' controls={false} interval={2000} indicators={false} >
+            <Carousel className='PartnerCarousel' controls={false} interval={3000} indicators={false} >
                 {PartnerCarouselData.map((group, groupIndex) => (
                     <Carousel.Item key={groupIndex}>
                         <div className='partnersContainer'>

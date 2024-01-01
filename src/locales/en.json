@@ -1,5 +1,44 @@
 {
-    "header":{
-        "h":"main"
+    "button": {
+        "BookCall": "Book Call",
+        "employeeFocus": "Let Your Employees Focus on What Actually Matter"
+    },
+    "Header": {
+        "company_Description": {
+            "firstP": "The Only",
+            "secondP": "Travel Managment",
+            "thirdP": "Company you might need in"
+        }
+    },
+    "Reservations_Section": {
+        "reservationsTitle": "Eventique Is Your Go To For Corporate Travels",
+        "reservationFeature1": "Hotels",
+        "reservationFeature2": "Flights",
+        "reservationFeature3": "transportation"
+    },
+    "keyFeatures_Section": {
+        "bussinessKeyFeature": "Key features to add value to your business",
+        "bussinessKeyFeature_subTitle": "This sounds simple, but it is Important to a productive journey."
+    },
+    "brandNameBaner_Section": {
+        "Name": "Eventique"
+    },
+    "brandNumbers_Section": {
+        "brandNumbersTitle1": "Eventique in numbers",
+        "clientNumbers": "+1000",
+        "clientImpression1": "Customer Satisfaction",
+        "clientImpression2": "Happy travelers",
+        "clientImpression3": "Itineraries Conducted"
+    },
+    "brandParteners_Section": {
+        "brandPartnersTitlepart1": "Some of",
+        "brandPartnersTitlepart2": "our partners"
+    },
+    "support_Section": {
+        "suportHeader": "Simple ways to support your Employees"
+    },
+    "collaboration_Section": {
+        "collaborationHeaderPart1": "Let's discuss how we can ",
+        "collaborationHeaderPart2": "collaborate together."
     }
 }

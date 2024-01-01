@@ -14,13 +14,9 @@ const FeatureCarousel = () => {
                             <Carousel.Item key={data.id}>
                                 <div className='Carousel-container'>
                                     <div className='Carousel-container-Data'>
-                                        {/* <div className='Carousel-container-Data-img'> */}
-                                        {/* <img width='50%' height='100%' src={data.DescImage} alt={data.DescImageAlt} /> */}
-                                        {/* </div> */}
                                         <div className='Carousel-container-Data-Paragraph'>
                                             <p>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit vel obcaecati, et aut consequatur, aspernatur nulla aliquid exercitationem, eius blanditiis debitis dolorem. Nostrum vel iste corporis, tempora commodi fugiat harum.
-                                                {/* {data.TextContent} */}
+                                                {data.TextContent}
                                             </p>
                                         </div>
                                     </div>
@@ -29,13 +25,6 @@ const FeatureCarousel = () => {
                         )
                     })
                 }
-
-
-
-
-
-
-
 
             </Carousel>
         </>

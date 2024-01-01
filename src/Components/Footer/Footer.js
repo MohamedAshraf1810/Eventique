@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.scss'
+import Logo from '../../Static/Images/Logo/Logo_White.png'
+import BrandLogo from '../BrandLogo/BrandLogo'
 
 const Footer = () => {
     return (
@@ -7,12 +9,11 @@ const Footer = () => {
             <footer className='footer'>
                 <div className="footerContainer">
                     <div className='footer-Brand-Logo'>
-                        <span className='BrandLogo'>Eventeque</span>
-                        <span className='BrandExtension'>.co</span>
+                        <BrandLogo logo={Logo} />
                     </div>
 
                     <div className='Brand-copyrights'>
-                        &copy; 2023 Excel travel. All rights reserved<br />
+                        &copy; 2023 Eventeque. All rights reserved<br />
                         | Terms & Condition
                     </div>
                 </div>

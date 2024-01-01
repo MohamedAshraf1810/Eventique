@@ -1,20 +1,21 @@
 // Data of partner Carousel
-import HyattLogo from '../Static/Images/partners/Hyatt.png'
-import IHG from '../Static/Images/partners/IHG.png'
-import Marriott from '../Static/Images/partners/Marriott.png'
-import BunnikTours from '../Static/Images/partners/BunnikTours.png'
-import Radisson from '../Static/Images/partners/Radisson.png'
-import Sheraton from '../Static/Images/partners/Sheraton.png'
+import HyattLogo from '../Static/Images/partners/Hyatt.webp'
+import IHG from '../Static/Images/partners/IHG.webp'
+import Marriott from '../Static/Images/partners/Marriott.webp'
+import Radisson from '../Static/Images/partners/Radisson.webp'
+import Sheraton from '../Static/Images/partners/Sheraton.webp'
+import fourSeason from '../Static/Images/partners/fourSeason.webp'
 
 const PartnerCarouselData = [
     [
         {
             id: '1',
-            ImgSrc: HyattLogo,
+
+            ImgSrc: IHG,
         },
         {
             id: '2',
-            ImgSrc: IHG,
+            ImgSrc: HyattLogo,
         },
         {
             id: '3',
@@ -25,16 +26,16 @@ const PartnerCarouselData = [
     [
         {
             id: '4',
-            ImgSrc: BunnikTours,
-        },
-        {
-            id: '5',
             ImgSrc: Radisson,
         },
         {
-            id: '6',
+            id: '5',
             ImgSrc: Sheraton,
         },
+        {
+            id: '6',
+            ImgSrc: fourSeason,
+        }
     ]
 ]
 

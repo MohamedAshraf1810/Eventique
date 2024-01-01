@@ -9,43 +9,13 @@
     height: 150px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    .footer-Brand-Logo {
-      width: 50%;
-      // background-color: red;
-
-      .BrandLogo {
-        color: white;
-        font-family: Lato;
-        font-size: 33.66px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30.855px;
-        text-transform: uppercase;
-      }
-      .BrandExtension {
-        color: white;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 30.855px;
-      }
-    }
     .Brand-copyrights {
       width: 50%;
-      // background-color: rgb(210, 210, 210);
       text-align: right;
-      // color: #47332d;
-      // text-align: right;
-      // font-feature-settings: "liga" off;
-      // font-size: 18px;
-      // font-style: normal;
-      // font-weight: 400;
-      // line-height: 30px; /* 166.667% */
-      // letter-spacing: 0.072px;
     }
   }
 }
 
-@import "./footer_Responsive.scss";
+@import "./Footer_Responsive.scss";

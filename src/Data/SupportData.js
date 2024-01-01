@@ -1,7 +1,7 @@
 // Data of Support Section
-import HeadSet from '../Static/Images/Support-Icons/HeadSet.png'
-import Emergency_Support from '../Static/Images/Support-Icons/Emergency_Support.png'
-import Chat from '../Static/Images/Support-Icons/chat.png'
+import HeadSet from '../Static/Images/Support-Icons/HeadSet.webp'
+import Emergency_Support from '../Static/Images/Support-Icons/Emergency_Support.webp'
+import Chat from '../Static/Images/Support-Icons/chat.webp'
 
 
 const SupportDate = [

@@ -9,7 +9,7 @@
   );
 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../../Static/Images/two_Seperated_Buildings.png) no-repeat center/cover;
+    url(../../Static/Images/two_Seperated_Buildings.webp) no-repeat center/cover;
   // Carsousel Shadow
   box-shadow: 10px 10px 80px rgba($color: $Dark-Green-color, $alpha: 0.9);
   width: 100%;
@@ -24,14 +24,6 @@
     .Carousel-container-Data {
       width: 100%;
       display: flex;
-      // .Carousel-container-Data-img {
-      //   padding-top: 20px;
-      //   padding-bottom: 20px;
-      //   // background-color: brown;
-      //   color: white;
-      //   width: 30%;
-      //   text-align: center;
-      // }
 
       .Carousel-container-Data-Paragraph {
         font-size: 25px;
@@ -53,6 +45,5 @@
   }
 }
 
-
 // Media Query
-@import './featureCarousel_Responsive.scss';
+@import "./featureCarousel_Responsive.scss";

@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.brandLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .brandLogoIMG {
+    height: 100px;
+    width: 360px;
+  }
+}
+
+@import "./BrandLogoResponsive.scss";

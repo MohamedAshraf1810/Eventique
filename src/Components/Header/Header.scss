@@ -1,0 +1,21 @@
+@import "../../App.scss";
+
+.brandHeader {
+  background-color: #f6f7f8;
+  .headerContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    
+    .BookCallBTN {
+      @include BookCall();
+      cursor: pointer;
+    }
+  }
+}
+
+
+@import './HeaderResponsive.scss';
