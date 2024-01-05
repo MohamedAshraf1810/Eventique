@@ -1,7 +1,8 @@
-import React from 'react'
-import './Footer.scss'
-import Logo from '../../Static/Images/Logo/Logo_White.png'
-import BrandLogo from '../BrandLogo/BrandLogo'
+import React from 'react';
+import './Footer.scss';
+import Logo from '../../Static/Images/Logo/Logo_White.webp';
+import BrandLogo from '../BrandLogo/BrandLogo';
+import Contactus from '../ContactUs/Contactus';
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
 
                     <div className='Brand-copyrights'>
                         &copy; 2023 Eventeque. All rights reserved<br />
-                        | Terms & Condition
+                        <Contactus /> | Terms & Condition
                     </div>
                 </div>
             </footer>

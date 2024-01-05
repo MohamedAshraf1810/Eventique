@@ -40,5 +40,13 @@
     "collaboration_Section": {
         "collaborationHeaderPart1": "Let's discuss how we can ",
         "collaborationHeaderPart2": "collaborate together."
+    },
+    "ContactUs": {
+        "MainButton": "Contact us",
+        "ContactTitle": "Contactus",
+        "EmailAddress": "Email",
+        "PhoneNum": "Phone",
+        "Close": "Close",
+        "Submit": "Submit"
     }
 }

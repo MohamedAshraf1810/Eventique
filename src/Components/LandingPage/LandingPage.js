@@ -142,7 +142,7 @@ const LandingPage = () => {
             {/* Section 5 Start (Numbers) */}
             <section className='Brand-Numbers-Section'>
                 <div className="Brand-Numbers-Container">
-                    <h4 className='Brand-Number-Title'>{content.brandNumbers_Section.brandNumbersTitle1}</h4>
+                    <p className='Brand-Number-Title'>{content.brandNumbers_Section.brandNumbersTitle1}</p>
                     <div className="Brand-Customers-impressions">
 
                         <div className='impressions'>
@@ -197,7 +197,7 @@ const LandingPage = () => {
                                         <img src={supportData.imgSrc} alt={supportData.imgAlt} loading='lazy' />
                                     </div>
                                 </div>
-                                <h6 className='support-title'>{supportData.title}</h6>
+                                <p className='support-title'>{supportData.title}</p>
                                 <p className='support-content'>
                                     {supportData.content}
                                 </p>
