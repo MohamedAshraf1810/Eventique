@@ -25,8 +25,27 @@
   }
   .ContactUs-Modal-Body {
     background-color: #f6f7f8;
-    .FormControlInput {
-      background-color: #f6f7f8;
+    .Modal-Body-Data {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .contactDetails {
+        padding: 10px 0px;
+        &.mailDetails{
+          margin-right: 15px;
+        }
+        .contactWayDetails{
+          color: #149f98;
+          font-weight: bold;
+          font-size: 13px;
+        }
+        .contactTitle {
+          margin: 0;
+          font-weight: bold;
+        }
+      }
     }
   }
 
@@ -36,17 +55,8 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      gap: 20px;
-
-      .contactForm-submit {
-        border: none;
-        background: linear-gradient(
-          180deg,
-          $primary-green-color 0%,
-          #4f7878 50.62%,
-          rgba(31, 49, 53, 0.83) 100%
-        );
-        filter: drop-shadow(0px 25.1px 31.375px rgba(182, 182, 173, 0.26));
+      .closeModal {
+        width: 50%;
       }
     }
   }

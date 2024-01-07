@@ -44,9 +44,10 @@
     "ContactUs": {
         "MainButton": "Contact us",
         "ContactTitle": "Contactus",
-        "EmailAddress": "Email",
-        "PhoneNum": "Phone",
-        "Close": "Close",
-        "Submit": "Submit"
+        "EmailAddressTitle": "Eventique Email Address",
+        "PhoneNumberTitle": "Eventique Phone Number",
+        "EventiqueRealMail": "Reservation@eventiquellc.com",
+        "EventiqueRealPhone": "0xxxxxxxx",
+        "Close": "Close"
     }
 }

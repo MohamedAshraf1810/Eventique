@@ -22,39 +22,25 @@ function Example() {
                 </Modal.Header>
 
                 <Modal.Body className='ContactUs-Modal-Body'>
-                    <Form>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>{content.ContactUs.EmailAddress}</Form.Label>
-                            <Form.Control
-                                className='FormControlInput'
-                                type="email"
-                                placeholder="name@example.com"
-                                autoFocus
-                            />
-                        </Form.Group>
-
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>{content.ContactUs.PhoneNum}</Form.Label>
-                            <Form.Control
-                                className='FormControlInput'
-                                type="text"
-                                placeholder="0xxxxxxxxxxx"
-                                autoFocus
-                            />
-                        </Form.Group>
-                    </Form>
+                    <div className='Modal-Body-Data'>
+                        <div className='contactDetails mailDetails'>
+                            <h6 className='contactTitle MailContact-title'>{content.ContactUs.EmailAddressTitle}</h6>
+                            <a className='contactWayDetails MailContact-Data' href={`mailto:${content.ContactUs.EventiqueRealMail}`}>{content.ContactUs.EventiqueRealMail}</a>
+                        </div>
+                        <div className='contactDetails phoneDetails'>
+                            <h6 className='contactTitle PhoneContact-title'>{content.ContactUs.PhoneNumberTitle}</h6>
+                            <a className='contactWayDetails phoneContact-Data' href="#a">{content.ContactUs.EventiqueRealPhone}</a>
+                        </div>
+                    </div>
                 </Modal.Body>
                 <Modal.Footer className='ContactUs-Modal-Footer'>
                     <div className='Modal-Footer-Container'>
-                        <Button variant="secondary" onClick={handleClose}>
+                        <Button className='closeModal' variant="secondary" onClick={handleClose}>
                             {content.ContactUs.Close}
-                        </Button>
-                        <Button className='contactForm-submit' variant="primary" onClick={handleClose}>
-                            {content.ContactUs.Submit}
                         </Button>
                     </div>
                 </Modal.Footer>
-            </Modal>
+            </Modal >
         </>
     );
 }
