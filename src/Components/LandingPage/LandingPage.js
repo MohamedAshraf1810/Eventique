@@ -235,6 +235,7 @@ const LandingPage = () => {
             {/* Footer start */}
             <Footer />
             {/* Footer End */}
+
         </>
     )
 }

@@ -4,17 +4,37 @@
   background-color: $Dark-Green-color;
   width: 100%;
   color: white;
+  padding-top: 20px;
   .footerContainer {
     width: 90%;
-    height: 150px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .Brand-copyrights {
-      width: 50%;
-      text-align: right;
+    .footer-Brand-Logo {
+      width: 30%;
     }
+    .Brand-address {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .address-container {
+        width: 52%;
+        margin-bottom: 10px;
+        a {
+          color: white;
+          transition: 0.5s;
+          &:hover {
+            color: #149f98;
+          }
+        }
+      }
+    }
+  }
+  .terms_conditions {
+    text-align: center;
+    background-color: rgba(251, 251, 251, 0.053);
+    padding: 10px;
   }
 }
 

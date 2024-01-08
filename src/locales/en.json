@@ -40,14 +40,5 @@
     "collaboration_Section": {
         "collaborationHeaderPart1": "Let's discuss how we can ",
         "collaborationHeaderPart2": "collaborate together."
-    },
-    "ContactUs": {
-        "MainButton": "Contact us",
-        "ContactTitle": "Contactus",
-        "EmailAddressTitle": "Eventique Email Address",
-        "PhoneNumberTitle": "Eventique Phone Number",
-        "EventiqueRealMail": "Reservation@eventiquellc.com",
-        "EventiqueRealPhone": "0xxxxxxxx",
-        "Close": "Close"
     }
 }

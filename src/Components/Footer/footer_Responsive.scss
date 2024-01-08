@@ -2,34 +2,22 @@
 @import "../../Helpers/mediaQueries";
 
 // from minimum to 575px
-@include Xs {
-  .footer {
-    height: 150px;
-    .footerContainer {
-      width: 100%;
-      flex-direction: column;
-      height: fit-content;
-      .footer-Brand-Logo {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-      .Brand-copyrights {
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-      }
-    }
-  }
-}
-
-// from minimum to 575px
 @include Sm {
   .footer {
     .footerContainer {
-      height: fit-content;
+      padding-bottom: 10px;
       flex-direction: column;
-      .Brand-copyrights {
-        text-align: center;
+      .footer-Brand-Logo {
+        margin-bottom: 10px;
+        width: 95%;
+      }
+      .Brand-address {
+        width: 100%;
+        font-size: 15px;
+        align-items: center;
+        .address-container {
+          width: 90%;
+        }
       }
     }
   }
